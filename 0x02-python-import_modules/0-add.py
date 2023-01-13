@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10, 10)
-if number < 0:
-    print(f'{number:d} is negative')
-if number == 0:
-    print(f'{number:d} is zero')
-if number > 0:
-    print(f'{number:d} is positive')
+from add_0 import add
+if __name__ == "__main__":
+    a = 1
+    b = 2
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
